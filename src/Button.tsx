@@ -1,9 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority";
-import React, {
-  ComponentPropsWithoutRef,
-  PropsWithoutRef,
-  ReactNode,
-} from "react";
+import { ComponentPropsWithoutRef, PropsWithoutRef, ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
 const button = cva(

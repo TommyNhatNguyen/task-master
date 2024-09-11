@@ -45,7 +45,7 @@ const Task = ({
         setIsShowControls(false);
       }
     });
-    window.addEventListener("click", (e: any) => {
+    window.addEventListener("click", () => {
       setIsShowControls(false);
     });
   }, []);

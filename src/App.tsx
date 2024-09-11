@@ -139,7 +139,7 @@ function App() {
           <hr className="my-4" />
           <div className="tasks flex flex-col gap-4">
             {tasks?.length < 1 && <h2>Start your day with a task 👆🏼</h2>}
-            {tasks?.map((item, index) => {
+            {tasks?.map((item: any, index: any) => {
               return (
                 <Task
                   key={item.task + index}
