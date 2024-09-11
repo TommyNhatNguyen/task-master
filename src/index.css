@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'rb';
+    src: url('../public/fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../public/fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'rr';
+    src: url('../public/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../public/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'rm';
+    src: url('../public/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../public/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@layer base {
+    html {
+        font-family: 'rr';
+    }
+
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+    }
+
+}
