@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <div className="relative top-0 flex h-14 w-full items-center justify-between p-4">
       <a className="z-10 flex h-10 w-10">
-        <img className="object-center" src="/assets/logo.png" alt="logo" />
+        <img className="object-center" src="./assets/logo.png" alt="logo" />
       </a>
       {user ? (
         <div id={userId} className="z-10 flex items-center gap-1">

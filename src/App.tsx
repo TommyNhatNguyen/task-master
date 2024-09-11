@@ -88,13 +88,13 @@ function App() {
     }
   };
   return (
-    <main className="bg-[url('/assets/background.jpg')]">
+    <main className="bg-[url('./assets/background.jpg')]">
       <Header />
       <div className="m-auto flex h-lvh w-lvw items-center justify-center">
         <div className="container max-w-[750px] rounded-xl border-2 border-sky-400 bg-gradient-to-tl from-sky-300/50 to-white p-6 px-6 py-4">
           <div className="content flex flex-col items-center justify-between text-center">
             <img
-              src="/assets/logo.png"
+              src="./assets/logo.png"
               alt="logo"
               className="h-24 w-24 object-cover object-center"
             />
