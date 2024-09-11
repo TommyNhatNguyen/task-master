@@ -4,7 +4,7 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { auth, db } from "../config";
-import { Timestamp, addDoc, collection, doc, setDoc } from "firebase/firestore";
+import { Timestamp, doc, setDoc } from "firebase/firestore";
 
 const provider = new FacebookAuthProvider();
 export const handleLoginFacebook = async (collectionName: string) => {

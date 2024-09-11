@@ -1,18 +1,8 @@
-import React from "react";
 import Button from "./Button";
 import { useAppContext } from "./context/AppContext";
 import { MODAL_TYPES } from "./constant/modal";
-import { auth, db } from "./firebase/config";
+import { auth } from "./firebase/config";
 import { signOut } from "firebase/auth";
-import {
-  Timestamp,
-  addDoc,
-  collection,
-  doc,
-  getDoc,
-  setDoc,
-} from "firebase/firestore";
-import { get } from "firebase/database";
 
 type ModalTypes = keyof typeof MODAL_TYPES | "";
 

@@ -1,13 +1,3 @@
-// if (userId) {
-//   const newTaskDocPath = `users/${userId}/tasks/${"id5"}`;
-//   const newTaskDocRef = doc(db, newTaskDocPath);
-//   setDoc(newTaskDocRef, {
-//     id: "id5",
-//     task: "this is task number 5",
-//     createdAt: Timestamp.now(),
-//   });
-// }
-
 import {
   CollectionReference,
   DocumentData,
@@ -16,7 +6,6 @@ import {
   query,
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import Task from "../../Task";
 
 export const getTaskData = (
   userId: string,

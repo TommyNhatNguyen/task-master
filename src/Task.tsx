@@ -2,7 +2,7 @@ import { MouseEvent, useEffect, useState } from "react";
 import Button from "./Button";
 import { SlOptions } from "react-icons/sl";
 
-type Task = {
+type TaskType = {
   id: number;
   isDone: boolean;
   isUpdate: boolean;
@@ -20,7 +20,7 @@ const Task = ({
   handleRemoveTask,
   handleDoneTask,
   handleUndoneTask,
-}: Task) => {
+}: TaskType) => {
   const [isShowControls, setIsShowControls] = useState(false);
   const _onShowControls = (e: MouseEvent<HTMLButtonElement>): void => {
     e.preventDefault();

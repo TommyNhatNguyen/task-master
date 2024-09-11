@@ -5,13 +5,6 @@ import {
 } from "@ant-design/icons";
 import Button from "./Button";
 import { useAppContext } from "./context/AppContext";
-import {
-  FacebookAuthProvider,
-  getAdditionalUserInfo,
-  signInWithPopup,
-} from "firebase/auth";
-import { auth, db } from "./firebase/config";
-import { Timestamp, addDoc, collection } from "firebase/firestore";
 import { handleLoginFacebook } from "./firebase/services/loginServices";
 
 const Modal = () => {

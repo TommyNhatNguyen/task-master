@@ -1,4 +1,3 @@
-import Task from "./Task";
 import { ChangeEvent, FormEvent, useRef, useState } from "react";
 import { BsPlusSquare } from "react-icons/bs";
 import Header from "./Header";
@@ -11,6 +10,7 @@ import {
   setDoc,
   updateDoc,
 } from "firebase/firestore";
+import Task from "./Task";
 
 /**
  Features: 

@@ -1,7 +1,6 @@
-import React, {
+import {
   ReactNode,
   createContext,
-  useCallback,
   useContext,
   useEffect,
   useState,
@@ -9,8 +8,7 @@ import React, {
 import { MODAL_TYPES } from "../constant/modal";
 import { User, onAuthStateChanged } from "firebase/auth";
 import { auth, db } from "../firebase/config";
-import Task from "../Task";
-import { DocumentData, collection, onSnapshot } from "firebase/firestore";
+import { collection } from "firebase/firestore";
 import { getTaskData } from "../firebase/services/taskService";
 
 type ModalTypes = keyof typeof MODAL_TYPES | "";
