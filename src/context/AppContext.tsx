@@ -17,7 +17,7 @@ const AppContext = createContext<Partial<any>>({});
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
   const [modalShow, setModalShow] = useState<ModalTypes>("");
-  const [user, setUsers] = useState<User | string>("");
+  const [user, setUsers] = useState<User | any>("");
   const hanldeShowModal = (modalType: ModalTypes): void => {
     setModalShow(modalType);
   };
